@@ -116,6 +116,43 @@
 			</div>
 			<div class="clear"></div>
 		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Get In Touch</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Send Message</h2>
+					<p><p>
+					<form method="post" action="{%url 'home' %}">
+						{%csrf_token %}
+						<div class= "inputBox">
+							<input type="text" name="fullName" required="required">
+							<span>Full Name</span>
+						</div>	
+						<div class= "inputBox">
+							<input type="text" name="" required="required">
+							<span>Email</span>
+						</div>	
+						<div class= "inputBox">
+							<input type="text" name="" required="required">
+							<span>Subject</span>
+						</div>	
+						<div class= "inputBox">
+							<textarea name="message" required="required"></textarea>
+							<span>Type your message...</span>
+						</div>
+						<div class= "inputBox">	
+							<input type="submit" name="" value="Send">
+						</div>
+					</form>		
+				</article>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
 		
 	</div>
 </div>

@@ -156,6 +156,55 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
+.inputBox {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.inputBox input, 
+.inputBox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.inputBox span {
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span
+{
+	color: #e89c31;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.inputBox input[type="submit"]
+{
+	width: 100px;
+	background: #031b28;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
 		display: none;
